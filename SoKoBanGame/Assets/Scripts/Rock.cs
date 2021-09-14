@@ -9,8 +9,7 @@ public class Rock : MonoBehaviour
         if(colli.gameObject.tag == "Player"){
             transform.position = Vector2.MoveTowards(transform.position,new Vector2(10f,transform.position.y),
             3f*Time.deltaTime);
+            Time.timeScale = 0;
         }
-        
-        
     }
 }

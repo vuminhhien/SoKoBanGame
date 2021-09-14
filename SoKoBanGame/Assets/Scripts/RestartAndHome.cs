@@ -7,7 +7,7 @@ public class RestartAndHome : MonoBehaviour
 {
     public void Restart()
     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); // quay về lại nơi bắt đầu của màn chơi đó
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); // quay về lại nơi bắt đầu của màn chơi đó
         Time.timeScale = 1;
     }
     public void Home()
