@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Water : MonoBehaviour
 {
+    public GameObject pauseUI;
+
+    private void Start()
+    {
+        pauseUI.SetActive(false);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerController player = other.GetComponent<PlayerController>();
         if(player != null){
-            SceneManager.LoadScene("Scenes/DeathWater");
+            pauseUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Tuve.unity
+    guid: 476412f449f0a8f409ecfa59ce8b1366
+  - enabled: 1
     path: Assets/Scenes/DeathWater.unity
     guid: 5243640263699b24b93d3f45986abbbd
   - enabled: 1
