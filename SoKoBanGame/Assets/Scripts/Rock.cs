@@ -11,5 +11,9 @@ public class Rock : MonoBehaviour
             3f*Time.deltaTime);
             Time.timeScale = 0;
         }
+        else 
+        if(colli.gameObject.tag == "lava"){
+            Destroy(GameObject.Find("rock"));
+        }
     }
 }
